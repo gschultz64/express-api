@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Edit Page</title>
+  </head>
+  <body>
+    <h1>Please edit this Seattle Mariners player:</h1>
+    <form method="POST" action="/players/<%= id %>">
+      <input type="text" name="name" value="<%= player.name %>" /><br/>
+      <input type="text" name="position" value="<%= player.position %>" /><br/>
+      <input type="submit" value="Update" />
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

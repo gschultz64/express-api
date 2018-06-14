@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Index Page</title>
+  </head>
+  <body>
+    <h1>Seattle Mariners Baseball Players</h1>
+    <ul>
+    <% players.forEach(function(player, i) { %>
+      <li><%= player.name %> plays <%= player.position %><a href="/players/<%= i %>">Delete</a></li>
+    <% }); %>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
