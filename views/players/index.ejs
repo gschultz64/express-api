@@ -8,7 +8,7 @@
   <body>
     <h1>Seattle Mariners Baseball Players</h1>
     <ul>
-    <% players.forEach(function(player, i) { %>
+    <% player.forEach(function(player, i) { %>
       <li><%= player.name %> plays <%= player.position %><a href="/players/<%= i %>">Delete</a></li>
     <% }); %>
     </ul>
